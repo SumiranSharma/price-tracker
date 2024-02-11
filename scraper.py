@@ -39,7 +39,7 @@ def send_mail():
     server.starttls() #encrypts connection
     server.ehlo()
 
-    server.login ('dakshftw01@gmail.com', 'ndkc jjeq spbh tzuh')
+    #server.login ('daksh@gmail.com', 'password-from-google_app_password')
     #server.login('sumiran@gmail.com', 'password-from-google_app_password')
 
     subject = 'price low get it now!'
@@ -47,8 +47,8 @@ def send_mail():
     msg = f"Subject: {subject}\n\n{body}"
 
     server.sendmail(
-        'dakshftw01@gmail.com',
-        'sumiran.s.0222@inspiria.edu.in',
+        #'from',
+        #'to',
         msg
     )
     print('HEY EMAIL HAS BEEN SENT')
