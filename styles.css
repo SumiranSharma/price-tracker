@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'metroBold';
+    src: url('/fonts/Metropolis-SemiBold.otf')
+}
+
+@font-face {
+    font-family: 'metroItalic';
+    src: url('/fonts/Metropolis-LightItalic.otf')
+}
+
+@font-face {
+    font-family: 'metroRegular';
+    src: url('/fonts/Metropolis-Regular.otf')
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: #0f102b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+::placeholder{
+    font-family: 'metroItalic';
+}
+
+.info-card{
+    width: 450px;
+    background: #23243C;
+    padding: 5rem;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.info-card-header {
+    margin-bottom: 2rem;
+}
+
+.info-card-header h1 {
+    font-family: 'metroRegular';
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color:#ecedff;
+}
+
+.info-card-header h1+div {
+    font-size: calc(1rem * .8);
+    opacity: .5;
+}
+
+.info-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-card-form .form-item {
+    position: relative;
+}
+
+.info-card input[type="submit"]{
+    padding: 1px 2px;
+    font-size: 14px;
+}
+
+.info-card input[type="text"],
+.info-card input[type="number"],
+.info-card input[type="email"] {
+    border: none;
+    outline: none;
+    background: #434459;
+    padding: 1rem;
+    padding-left: 5px;
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.info-card input:focus {
+    background: rgb(222, 222, 222);
+}
+
+.info-card button {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 0.75rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+    font-family: 'metroBold';
+    font-size: 14px;
+    width: 100px;
+    margin-left: 40%;
+}
+
+.info-card button:hover {
+    background-color: rgba(204, 204, 204, 0.85);
+    cursor: pointer;
+}
